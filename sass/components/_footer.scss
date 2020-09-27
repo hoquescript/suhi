@@ -1,0 +1,18 @@
+.footer{
+  background-image: url('../assets/board-dark.png');
+  background-size: contain;
+  background-repeat: repeat;
+  padding: 10rem 30rem 2rem;
+  &_image{
+    text-align: center;
+  }
+  &_ending{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10rem;
+  }
+  &_terms{
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+}

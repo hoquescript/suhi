@@ -1,0 +1,20 @@
+.rolls{
+  padding: 10rem 15rem 0;
+  background-color: #f5f5f5 !important;
+  &_title{
+    font-size: 48px;
+    font-weight: 700;
+    font-style: normal;
+    color: #242424;
+    text-align: center;
+    margin: 100px;
+  }
+  &_card{
+    background-color: #fff;
+    padding: 3rem 1rem;
+  }
+  &_bg{
+    text-align: center;
+    padding: 8rem 0 0;
+  }
+}

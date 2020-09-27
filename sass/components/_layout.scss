@@ -4,11 +4,30 @@
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    // @include respond(tab-land){
+    //     font-size: 56.25%;
+    // }
+    // @include respond(tab-port){
+    //     font-size: 50%;
+    // }
+    // @include respond(big-desktop){
+    //     font-size: 75%;
+    // }
+}
+
+body {
+    // padding: 3rem;
+    // @include respond(tab-port){
+    //     padding: 0rem;
+    // }
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
-    line-height: 1.3rem;
-
-}
-body{
-  // background-color: #242424 !important;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #777;
 }

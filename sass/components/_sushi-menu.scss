@@ -1,0 +1,35 @@
+.sushi-menu{
+  padding: 10rem 10rem 15rem;
+  background-image: url('../assets/test-sushi-back.jpg');
+  &_wrapper{
+    padding: 5rem;
+  }
+  &_subtitle{
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 5rem;
+  }
+  &_card{
+    color: #fff;
+    background-color: #1b1b1b !important;
+    border-radius: 4px !important;
+    padding: 2rem 0;
+  }
+  &_card-image{
+    text-align: center;
+  }
+  &_name{
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  &_description{
+    font-size: 1.8rem;
+    text-align: center;
+    &-quantity{
+      font-weight: 400;
+      color: #777;
+    }
+  }
+}
