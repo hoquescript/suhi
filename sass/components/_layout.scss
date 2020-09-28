@@ -8,16 +8,19 @@
 }
 
 html {
-    font-size: 62.5%;
-    // @include respond(tab-land){
-    //     font-size: 56.25%;
-    // }
-    // @include respond(tab-port){
-    //     font-size: 50%;
-    // }
-    // @include respond(big-desktop){
-    //     font-size: 75%;
-    // }
+    font-size: 62.5%;  //   1rem = 10px
+    @include respond(desktop){
+        font-size: 56.25%; // 1rem = 8px
+    }
+    @include respond(tab-land){
+        font-size: 51%;
+    }
+    @include respond(tab-port){
+        font-size: 47%;
+    }
+    @include respond(phone){
+        font-size: 42%;
+    }
 }
 
 body {
@@ -27,7 +30,19 @@ body {
     // }
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
-    font-size: 1.6rem;
     line-height: 1.6;
     color: #777;
+    overflow-x: hidden;
+}
+
+.bowl{
+    width: 90rem;
+    @include respond(tab-land){
+        width: 80rem;
+    }
+
+    @include respond(phone){
+        width: 70rem;
+    }
+
 }

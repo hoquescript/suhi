@@ -3,6 +3,23 @@
   background-size: contain;
   background-repeat: repeat;
   padding: 10rem 30rem 2rem;
+  @include respond(desktop){
+    padding: 10rem 20rem 2rem;
+  }  
+  @include respond(tab-land){
+    padding: 10rem 15rem 2rem;
+  }
+  @include respond(tab-port){
+    padding: 10rem 5rem 2rem;
+  }
+  @include respond(phone){
+    padding: 10rem 2rem 2rem;
+  }
+  &_icon-wrapper{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
   &_image{
     text-align: center;
   }
@@ -10,6 +27,9 @@
     display: flex;
     justify-content: space-between;
     margin-top: 10rem;
+  }
+  &_icon{
+    margin: 0 1rem;
   }
   &_terms{
     font-size: 1.4rem;

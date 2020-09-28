@@ -2,6 +2,14 @@
   transform: translateY(-205px);
   background:#fff url('../assets/kanji-about.jpg');
   padding: 20rem 0 0rem;
+  // @include respond(tab-land){
+  // }
+  @include respond(desktop){
+    padding: 15rem 0 0rem;
+    background-size: 85%;
+    background-position: -120px center;
+  }
+
   background-size: 85%;
   background-repeat: no-repeat;
   background-position: -10px center;

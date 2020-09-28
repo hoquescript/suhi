@@ -1,5 +1,17 @@
 .meaty{
   padding: 10rem 15rem 15rem;
   background-image: url('../assets/test-sushi-back2.jpg');
+  @include respond(desktop){
+    padding: 10rem 10rem 2rem;
+  }  
+  @include respond(tab-land){
+    padding: 10rem 2rem 2rem;
+  }
+  @include respond(tab-port){
+    padding: 10rem 1rem 2rem;
+  }
+  // @include respond(phone){
+  //   padding: 10rem 2rem 2rem;
+  // }
 
 }

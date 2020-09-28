@@ -1,37 +1,68 @@
-.summary{
+.summary {
   background-color: #242424 !important;
   transform: translateY(-21rem);
+  @include respond(tab-land) {
+    transform: translateY(-26rem);
+  }
   position: relative;
-  &_plate{
+  &_plate {
     position: absolute;
     top: -31rem;
     left: 50%;
     transform: translate(-50%, 0);
+    width: 60rem;
+    @include respond(desktop) {
+      width: 55rem;
+    }
+
+    @include respond(tab-land) {
+      width: 50rem;
+    }
+    @include respond(tab-port) {
+      width: 40rem;
+    }
   }
-  &_content{
-    padding-top: 220px;
-    padding-bottom: 100px;
+  &_content {
     padding: 22rem 15rem 10rem;
+    @include respond(phone) {
+      padding: 2rem 10rem 15rem;
+    }
+    @include respond(tab-land) {
+      padding: 1rem 1rem 15rem;
+    }
+    @include respond(desktop) {
+      padding: 22rem 5rem 10rem;
+    }
   }
-  &_title{
-    font-size: 48px;
+  &_title {
+    font-size: 4.8rem;
     font-weight: 700;
     font-style: normal;
     color: #ffffff;
     text-align: center;
-    margin: 100px;
+    margin: 10rem 0;
   }
-  &_featured-title{
+  &_featured-title {
     text-align: center;
-    font-size: 1.9rem;
+    font-size: 3rem;
     font-weight: 500;
     font-style: normal;
     color: #fff;
     margin: 2rem;
   }
-  &_featured-body{
+  &_featured-body {
+    font-size: 1.4rem;
     color: #777777;
     text-align: center;
   }
+  &_featured-image {
+    width: 30rem;
+    @include respond(tab-port) {
+      width: 20rem;
+    }
 
+    @include respond(phone) {
+      width: 40rem;
+    }
+  }
 }
